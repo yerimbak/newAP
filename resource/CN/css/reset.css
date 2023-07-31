@@ -1,0 +1,78 @@
+/* -------------------------------------------------------------
+	[RESET] 초기화
+------------------------------------------------------------- */
+html, body, div, span, object, iframe,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main, summary,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+form, fieldset, legend, input, label, button, textarea, select, textarea, input,
+table, caption, tbody, tfoot, thead, tr, th, td,
+b, i, dl, dt, dd, ol, ul, li,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, data,
+time, mark, audio, video, a {margin:0; padding:0; box-sizing:border-box; outline:0}
+
+html {font-size:62.5%; scroll-behavior:smooth}
+* {-webkit-tap-highlight-color:transparent}
+
+html, body {width:100%; height:100%; overscroll-behavior-y:none; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+
+body {overflow-x:hidden; overflow-y:auto; color:#02060F; overflow-wrap:break-word; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; min-height:100%; -webkit-touch-callout:none}
+body, select, input, button, textarea, button, pre {font-size:1.6rem; line-height:1.8; font-family:'noto-sans-cjk-kr', sans-serif; letter-spacing:0.05rem; font-weight:300}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main, summary {display:block}
+blockquote, q {quotes:none}
+
+h1, h2, h3, h4, h5, h6 {font-size:100%}
+cite, em, dfn, address {font-style:normal}
+fieldset, iframe {border:0 none; min-width:0}
+ins {text-decoration:none}
+del {text-decoration:line-through}
+
+ol, ul, li{list-style:none}
+img, fieldset, iframe {border:0 none}
+img, video, audio, object, embed, iframe {width:100%; max-width:100%}
+
+legend, caption {overflow:hidden; position:absolute; width:1px; height:1px; margin:-1px; font-size:0; opacity:0; white-space:nowrap}
+i, em, address {font-style:normal}
+
+input, select, textarea {border-radius:0; box-shadow:none; background:transparent; -webkit-appearance:none; -moz-appearance:none; appearance:none; border:0}
+label, button {cursor:pointer}
+button {cursor:pointer; padding:0; background:none; border:0 none; color:#02060F}
+select::-ms-expand {display:none}
+textarea {resize:vertical}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {color:#444649}
+input:disabled {opacity:1; -webkit-text-fill-color:inherit}
+input[type="radio"], input[type="checkbox"] {border:0}
+input[type="radio"], input[type="checkbox"], input[type="tel"], input[type="number"] {vertical-align:middle}
+input[type="time"]::-webkit-calendar-picker-indicator {display:none}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {-webkit-text-fill-color:#292929 !important; -webkit-background-clip:text; background-clip:text}
+
+table {width:100%; empty-cells:show; border-spacing:0; table-layout:fixed}
+table th {font-weight:normal}
+
+a, img {-webkit-user-drag:none}
+a, a:visited {color:inherit}
+a:link, a:hover {text-decoration:none}
+a:focus,button:focus {outline: auto; outline-color:#107da8}
+:focus:not(:focus-visible) {outline: 0}
+
+.hide {overflow:hidden; position:absolute; left:3.0rem; top:2.0rem; width:1px; height:1px; font-size:1px; line-height:1.0rem; opacity:0}
+.none {display:none !important}
+
+/* ::-webkit-scrollbar {display:none} */
+
+
+input[readonly] {}
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; margin:0}
+
+input::placeholder {color:#444649; line-height:inherit; font-size:1.8rem; font-weight:300}

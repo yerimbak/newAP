@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>AMORE PACIFIC</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="twitter:card" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:image" content="">
+    <meta property="fb:app_id" content=""><!-- 230120 meta 추가 -->
+    <link rel="stylesheet" href="../../resource/INT/css/import.css">
+    <script src="../../resource/INT/js/jquery-3.4.1.min.js"></script>
+    <script src="../../resource/INT/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/INT/js/common.js"></script>
+    <!-- interaction -->
+    <link rel="stylesheet" href="../../resource/INT/css/interaction.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="../../resource/INT/js/interaction.js"></script>
+    <!--// interaction -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var gf=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N69CQLR');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N69CQLR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrap">
+        <!-- header -->
+        <script src="../00.include/header.js"></script>
+        <!-- // header -->
+
+        <main id="container">
+            <article id="content" class="our_story">
+                <ul class="breadcrumbs">
+                    <li>HOME</li>
+                    <li>DISCOVER</li>
+                    <li>OUR STORY</li>
+                </ul>
+                <section class="story_keyvisual trigger_box_v trigger_layer" data-trigger="our_story-trigger_box_v1">
+                    <div class="brand_intro layer_item">
+                        <div class="story_title">
+                            <h3>
+                                <span>A</span>
+                                <span>B</span>
+                                <span>S</span>
+                                <span>O</span>
+                                <span>L</span>
+                                <span>U</span>
+                                <span>T</span>
+                                <span>E&nbsp;</span>
+                                <span>P</span>
+                                <span>E</span>
+                                <span>R</span>
+                                <span>F</span>
+                                <span>O</span>
+                                <span>R</span>
+                                <span>M</span>
+                                <span>A</span>
+                                <span>N</span>
+                                <span>C</span>
+                                <span>E</span>
+                            </h3>
+                            <p>Surpassing Natural Limitations</p>
+                        </div>
+                        <div class="text_info trigger_box_txt">
+                            <div class="text_area">
+                                <h4 class="box" data-trigger="our_story-trigger_box_txt-box1">"What If We Could Make Our<span class="br"></span> Natural Skin Even Better?"</h4>
+                                <p class="box" data-trigger="our_story-trigger_box_txt-box2">
+                                    Our journey began with a simple, yet seemingly impossible dream.<br>
+                                    We believe that beauty should have no limits, pushing forward with our research,<br>
+                                    rejecting conventional wisdom until we uncovered the secret.
+                                </p>
+                                <button class="btn_more btn_right box" data-trigger="our_story-trigger_box_txt-box3">AP Expert Interview</button>
+                            </div>
+                        </div>
+                        <div class="story_bg box_bg" data-trigger="our_story-trigger_box_v-box_bg"></div>
+                    </div>
+
+                    <div class="interview_video_2">
+                        <h3>AP Center Researcher Interview</h3>
+                        <p>Researcher Seo Byung-Hwi</p>
+                        <div class="video">
+                            <video src="../../resource/INT/images/temp/@ap_intro.mp4" id="video1">대체텍스트입력</video>
+                            <div class="voddescription">영상에 대한 설명과 자막</div>
+                            <button class="btn_play" onclick="playHz('video1')"><img src="../../resource/INT/images/common/btn_play_100.png" alt="play"></button>    
+                        </div>
+                        <button class="btn_more btn_left" onclick="pauseHz('video1')">Close Interview</button>
+                    </div>
+                    <script>
+                        function playHz(idn) { 
+                            document.getElementById(idn).play(); 
+                            setInterval(function(){
+                                if($("video").prop("ended")){
+                                    $(".btn_play").fadeIn();
+                                }
+                            },200);
+                        } 
+                        function pauseHz(idn) { 
+                            document.getElementById(idn).pause(); 
+                        } 
+
+                        $(".btn_play").click(function(){
+                            $(this).fadeOut();                            
+                        });
+                        $(".interview_video_2 .btn_more").click(function(){
+                            $(this).siblings(".video").children(".btn_play").fadeIn();
+                        })
+
+                        $('.btn_right').click(function(){
+                            var posY =$(window).scrollTop();
+                            $('body').addClass('scrollDisable');
+                            $('.interview_video_2').addClass('on');
+                            
+                            $(window).scrollTop(posY);
+                        });
+                        $('.btn_left').click(function(){
+                            $('body').removeClass('scrollDisable');
+                            $('.interview_video_2').removeClass('on');
+                        });
+
+                    </script> 
+                </section>
+
+                <section class="trigger_box_sub" data-trigger="our_story-trigger_box_sub">
+                    <div class="key_line">
+                        <div class="text_info">
+                            <ul class="title trigger_txt">
+                                <li>
+                                    <span class="box" data-trigger="our_story-trigger_txt-box1">A</span>
+                                    <span class="box" data-trigger="our_story-trigger_txt-box2">NEW</span>
+                                    <span class="box" data-trigger="our_story-trigger_txt-box3">DIMENTION</span>
+                                    <span class="box" data-trigger="our_story-trigger_txt-box4">IN</span>
+                                </li>
+                                <li>
+                                    <span class="box" data-trigger="our_story-trigger_txt-box5">HIGH</span>
+                                    <span class="box" data-trigger="our_story-trigger_txt-box6">-END</span>
+                                    <span class="box" data-trigger="our_story-trigger_txt-box7">SKINCARE</span>
+                                </li>
+                            </ul>
+                            <p class="trigger_txt2" data-trigger="our_story-trigger_txt2">
+                                EPI-COSMETIC is the apex of skincare, offering exceptional results<br>
+                                unattainable elsewhere, challenging the limits of your natural skin<br>
+                                for a whole new level of beauty.
+                            </p>
+                        </div>
+                        <div class="video">
+                            <video src="../../resource/INT/images/discover/our_story_video_01.mp4" muted autoplay loop>대체텍스트입력</video>
+                            <div class="voddescription">영상에 대한 설명과 자막</div>
+                            <div class="box" data-trigger="our_story-trigger_box_sub-box"></div>
+                        </div>
+                    </div>
+
+                    <div class="skin_science">
+                        <ul class="title trigger_txt3">
+                            <li>
+                                <span class="box" data-trigger="our_story-trigger_txt3-box1">EPI</span>
+                                <span class="box" data-trigger="our_story-trigger_txt3-box2">-COSMETIC,</span>
+                            </li>
+                            <li>
+                                <span class="box" data-trigger="our_story-trigger_txt3-box3">NEW&nbsp;</span>
+                                <span class="box" data-trigger="our_story-trigger_txt3-box4">AREA&nbsp;</span>
+                                <span class="box" data-trigger="our_story-trigger_txt3-box5">Of&nbsp;</span>
+                                <span class="box" 
+                                data-trigger="our_story-trigger_txt3-box6">Skin&nbsp;</span>
+                                <span class="box" data-trigger="our_story-trigger_txt3-box7">Science</span>
+                            </li>
+                        </ul>
+
+                        <div class="screen">
+                            <div class="type_a trigger_box" data-trigger="our_story-trigger_box1">
+                                <div class="text_info">
+                                    <h4>The Finest<br>Expertise</h4>
+                                    <p>Backed by over 70 years of deep research<br>led by experts across various scientific<br>disciplines, AP leads skincare innovation<br>that pushes cross boundaries and<br>exceeds expectations.</p>
+                                </div>
+                                <span class="img mix_luminosity">
+                                    <img src="../../resource/INT/images/discover/our_story_img_01.png">
+                                </span>
+                            </div>
+                            <div class="type_b trigger_box" data-trigger="our_story-trigger_box2">
+                                <span class="img">
+                                    <img src="../../resource/INT/images/discover/our_story_img_02.png">
+                                </span>
+                                <div class="text_info">
+                                    <h4>New Heights of<br>Innovation</h4>
+                                    <p>Innovation and a scientific approach<br>to ingredients, formulations, and<br>technologies. We’re elevating expectations<br>for modern skincare, unlocking the secrets of<br>what’s happening under our skin.</p>
+                                </div>
+                            </div>
+                            <div class="type_c trigger_box" data-trigger="our_story-trigger_box3">
+                                <div class="text_info">
+                                    <h4>Clinically Proven<br>Results</h4>
+                                    <p>Through rigorous experimentation,<br>we deliver performance-driven formulas<br>with remarkable efficacies.</p>
+                                </div>
+                                <span class="img mix_luminosity">
+                                    <img src="../../resource/INT/images/discover/our_story_img_03.png">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection">
+                        <div class="layout_inner">
+                            <h5>PRIME RESERVE<br class="only_mobile"> Collection <br class="only_mobile"><br class="only_pc">Discover Your Prime<br class="only_mobile"> Skin and<br class="only_pc"> Preserve<br class="only_mobile"> It Forever</h5>
+                            <p>The first collection of EPI-COSMETIC. Our unique FLAVONOID 228K <br>combines with our innovative 3-step Retrinity System, Rejuvenates your <br>skin by reprogramming effectively.</p>
+                            <button>THE MORE</button>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- footer -->
+        <script src="../00.include/footer.js"></script>
+        <!-- // footer -->
+        <div class="dim"></div>
+    </div>
+</body>
+</html>

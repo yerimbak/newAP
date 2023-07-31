@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>AMORE PACIFIC</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="twitter:card" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:image" content="">
+    <meta property="fb:app_id" content=""><!-- 230120 meta 추가 -->
+    <link rel="stylesheet" href="../../resource/INT/css/import.css">
+    <script src="../../resource/INT/js/jquery-3.4.1.min.js"></script>
+    <script src="../../resource/INT/js/swiper-bundle.min.js"></script>
+    <script src="../../resource/INT/js/common.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var gf=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N69CQLR');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<style>
+	.scroll .our_story .story_keyvisual2 {padding-top:8.2rem !important}
+	.our_story .story_keyvisual2 {background:#000; padding-top:15.8rem}
+
+	.story_keyvisual2 .brand_intro {position:relative; overflow:hidden}
+	/* .story_keyvisual2.dark .brand_intro::before {content:''; position: absolute; left:0; top:0; width:100%; height:100%; background-color: rgba(0,0,0,.2); z-index:100} */
+	.story_keyvisual2 .brand_intro > div {position:relative; z-index:10}
+	.story_keyvisual2 .story_title .title_area {display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:futura-pt, sans-serif; line-height:1.1; font-weight:400; position:relative; color:#fff; width:100%; height:100vh; transition:all 1.3s; opacity:1}
+	.story_keyvisual2 .story_title h3 {display:flex; flex-direction:row; flex-wrap:wrap; margin-bottom:1.2rem; font-weight:400; font-size:5.6rem; transition:all 0.5s}
+	.story_keyvisual2 .story_title h3.only_pc {line-height:7.0rem; height:7.0rem; overflow:hidden; align-items:center; justify-content:center}
+	.story_keyvisual2 .story_title h3 span {margin:0 1rem; animation:title_margin_01 2s forwards, title_opacity_01 3.5s forwards; opacity:0}
+	.story_keyvisual2 .story_title h3 span:nth-child(odd) {animation:title_margin_01 2s forwards, title_opacity_02 3.5s forwards; opacity:0}
+	.story_keyvisual2 .story_title p {font-weight:400; font-size:2.8rem; position:relative; z-index:10; opacity:0; animation:title_opacity_03 3.5s forwards; transition:all 0.5s}
+	.story_keyvisual2 .text_info h4 em {font-family:noto-sans-cjk-kr, sans-serif; font-weight:500; font-size:75%}
+	.story_keyvisual2 .text_info {display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:futura-pt, sans-serif; font-weight:400; text-align:center;  width:100%; height:100vh; opacity:0; color:#fff; transition:all 1.5s}
+	.story_keyvisual2 .text_info h4 {margin-bottom:4rem; font-size:4.8rem; font-weight:400}
+	.story_keyvisual2 .text_info p { max-width:132.8rem; margin:0 auto; padding:0 0 6rem; font-family:noto-sans-cjk-kr, sans-serif; font-weight:300; font-size:2rem}
+	.story_keyvisual2 .text_info .btn_more{position:relative; line-height:1.8; padding-right:2.2rem; color:#fff; font-size:1.6rem}
+	.story_keyvisual2 .text_info .btn_more::before{content:""; display:block; width:100%; height:.1rem; background:#fff; position:absolute; bottom:0; left:0}
+	.story_keyvisual2 .text_info .btn_more::after{content:""; display:block; width:1.5rem; height:1.2rem; background:url("https://amc.apglobal.com/image/384224417642/image_hv0rskbt7536f66kkkueehb102/-FPNG") -12rem -11.2rem no-repeat; background-size:50rem 50rem; position:absolute; top:calc(50% - .6rem); right:0}
+
+	.story_keyvisual2 .brand_intro .kv_img{position:fixed; bottom:0; left:0; z-index:1; width:100%; height:100vh; transition: all 0s 0.2s}
+	.story_keyvisual2 .kv_img p {display:flex; justify-content:center; align-items:center; width:100%; height:100%}
+	.story_keyvisual2 .kv_img img {width:100%; object-fit:cover; transform:translate(0%, -8%); transition:all 1s}
+	.story_keyvisual2 .brand_intro.active .kv_img{ position:absolute; transition: all 0s 0s}
+	.story_keyvisual2 .brand_intro.active .title_area {transform:translateY(-50rem); opacity:0; transition:all 1.3s 0.1s}
+	.story_keyvisual2 .brand_intro.active .story_title h3 {transform:translateY(-3rem); transition:all 0.5s}
+	.story_keyvisual2 .brand_intro.active .story_title p {transform:translateY(-1rem); transition:all 0.5s}
+
+	.story_keyvisual2 .brand_intro.active .kv_img img {transform:translate(0%, 8%);  transition:all 1s; transition-delay:0.1s}
+
+	.story_keyvisual2 .brand_intro.active .text_info {opacity:1; transform:translateY(0); transition:all 1.5s; visibility:visible}
+
+	.story_keyvisual2 .interview_video {display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:calc(100vh - 8.2rem); font-family:futura-pt, sans-serif; font-size:6.4rem; line-height:1.2; color:#fff; text-align:center; font-weight:400}
+	.story_keyvisual2 .interview_video h3 {font-size:5.6rem; font-weight:500}
+	.story_keyvisual2 .interview_video p {width:80%; max-width:132.8rem; padding:2rem 0 4rem; font-size:2.8rem}
+	.story_keyvisual2 .interview_video .video {font-size:0; line-height:0;position:relative}
+	.story_keyvisual2 .interview_video video {max-width:120rem}
+	.story_keyvisual2 .interview_video .btn_more{position:relative; line-height:1.8;padding-left:2.2rem; color:#fff; font-size:1.6rem}
+	.story_keyvisual2 .interview_video .btn_more::before{content:""; display:block; width:100%; height:.1rem; background:#fff; position:absolute; bottom:0; left:0}
+	.story_keyvisual2 .interview_video .btn_more::after{content:""; display:block; width:1.5rem; height:1.2rem; background:url("https://amc.apglobal.com/image/384224417642/image_hv0rskbt7536f66kkkueehb102/-FPNG") -12rem -11.2rem no-repeat;  background-size:50rem 50rem; position:absolute; top:calc(50% - .6rem); transform:rotate(180deg); left:0}
+
+	.story_keyvisual2 .interview_video_2 {position: fixed; left:100%; top:8.2rem; height: calc(100vh - 8.2rem); transition: all 0.5s; display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:calc(100vh - 8.2rem); font-family:futura-pt, sans-serif; font-size:6.4rem; line-height:1.2; color:#fff; text-align:center; font-weight:400; z-index:10; background-color: #000; visibility: hidden}
+	.story_keyvisual2 .interview_video_2.on {left:0; z-index:988; visibility: visible}
+	.story_keyvisual2 .interview_video_2 h3 {margin-bottom: 1rem; font-size:3.6rem; font-weight:400}
+	.story_keyvisual2 .interview_video_2 h4 {font-size:3.6rem; font-weight:400}
+	.story_keyvisual2 .interview_video_2 p {max-width:132.8rem; padding:0; font-size:2.4rem; color:#707984; line-height: 1.5}
+	.story_keyvisual2 .interview_video_2 .video {position: relative; width: 150rem; max-width: 100%; margin: 0 auto}
+	.story_keyvisual2 .interview_video_2 video {width: auto; height: 60.7rem; max-width: 100%; max-height: calc(50vh - 7rem); margin: 4rem auto 3rem}
+	.story_keyvisual2 .interview_video_2 .btn_more{position:relative; line-height:1.8;padding-left:2.2rem; color:#fff; font-size:1.6rem}
+	.story_keyvisual2 .interview_video_2 .btn_more::before{content:""; display:block; width:100%; height:.1rem; background:#fff; position:absolute; bottom:0; left:0}
+	.story_keyvisual2 .interview_video_2 .btn_more::after{content:""; display:block; width:1.5rem; height:1.2rem; background:url("https://amc.apglobal.com/image/384224417642/image_hv0rskbt7536f66kkkueehb102/-FPNG") -12rem -11.2rem no-repeat;  background-size:50rem 50rem; position:absolute; top:calc(50% - .6rem); transform:rotate(180deg); left:0}
+</style>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N69CQLR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrap">
+        <!-- header -->
+        <script src="../00.include/header.js"></script>
+        <!-- // header -->
+
+        <main id="container">
+            <article id="content" class="our_story">
+                <ul class="breadcrumbs">
+                    <li>HOME</li>
+                    <li>DISCOVER</li>
+                    <li>OUR STORY</li>
+                </ul>
+                <section class="story_keyvisual2 dark">
+                    <!-- cta 배경 때문에 잘 안보일 떄 dark 추가 -->
+                    <div class="brand_intro">
+                        <div class="story_title sclElm" tabindex="0">
+							<div class="title_area">
+								<h3 class="only_pc">
+									<span>A</span>
+									<span>B</span>
+									<span>S</span>
+									<span>O</span>
+									<span>L</span>
+									<span>U</span>
+									<span>T</span>
+									<span>E&nbsp;</span>
+									<span>P</span>
+									<span>E</span>
+									<span>R</span>
+									<span>F</span>
+									<span>O</span>
+									<span>R</span>
+									<span>M</span>
+									<span>A</span>
+									<span>N</span>
+									<span>C</span>
+									<span>E</span>
+								</h3>
+								<h3 class="only_mobile">
+									<div>
+										<span>A</span>
+										<span>B</span>
+										<span>S</span>
+										<span>O</span>
+										<span>L</span>
+										<span>U</span>
+										<span>T</span>
+										<span>E</span>
+									</div>
+									<div>
+										<span>P</span>
+										<span>E</span>
+										<span>R</span>
+										<span>F</span>
+										<span>O</span>
+										<span>R</span>
+										<span>M</span>
+										<span>A</span>
+										<span>N</span>
+										<span>C</span>
+										<span>E</span>
+									</div>
+								</h3>
+								<p>Surpassing Natural Limitations</p>
+							</div>
+                        </div>
+                        <div class="text_info scroll_ani sclElm" tabindex="0">
+                            <div class="text_area">
+                                <h4>"What If We Could Make Our Natural Skin Even Better<em>?</em>"</h4>
+                                <p>
+                                    Our journey began with a simple, yet seemingly impossible dream.<br>
+                                    We believe that beauty should have no limits, pushing forward with our research,<br>
+                                    rejecting conventional wisdom until we uncovered the secret.
+                                </p>
+                                <!-- 23.02.07 -->
+                                <a href="#" class="btn_more btn_right box">Expert Interview</a>
+                            </div>
+                        </div>
+                        <div class="kv_img">
+                            <p class="img">
+                                <img src="https://amc.apglobal.com/image/384224417642/image_5m7ot2hlbh22185uhofghbp62d/-FJPG" alt="ABSOLUTE PERFORMANCE">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interview_video_2">
+                        <h4>Expert Interview</h4>
+                        <p>Brian Byung-Fhy Suh, Vice President</p>
+                        <p>AP R&I CENTER | Director of Skincare research Div. R&I center</p>
+                        <div class="video">
+                            <video poster="https://amc.apglobal.com/image/384224417642/image_444j1u1efd7e3368i5k6nfs43n/-FJPG" src="https://amc.apglobal.com/asset/384224417642/video_p2dc6cd939199eg4n1t3tbs17j?content-disposition=inline" id="video1">대체텍스트입력</video>
+                            <div class="voddescription">영상에 대한 설명과 자막</div>
+                            <!-- // 23.01.11 수정 -->
+                            <button class="play_btn" onclick="playHz('video1')">play
+                            </button>
+                        </div>
+                        <button class="btn_more btn_left" onclick="pauseHz('video1')">Close Interview</button>
+                    </div>
+                     <!-- 23.01.10 수정 -->
+                    <script>
+                        function playHz(idn) { 
+                            document.getElementById(idn).play(); 
+                            document.getElementById(idn).controls = true;
+                            setInterval(function(){
+                                if($('#'+idn).prop("ended")){
+                                    $('#'+idn).siblings(".play_btn").fadeIn();
+                                    document.getElementById(idn).controls = false;
+                                }
+                            },200);
+                        } 
+                        function pauseHz(idn) { 
+                            document.getElementById(idn).pause(); 
+                            document.getElementById(idn).controls = false;
+                        } 
+
+                        $(".play_btn").click(function(){
+                            $(this).fadeOut();
+                        });
+                        $(".interview_video_2 .btn_more").click(function(){
+                            $(this).siblings(".video").children(".play_btn").fadeIn();
+                        })
+
+                        $('.btn_right').click(function(){
+                            offsetY = window.pageYOffset;
+                            $('body').addClass('scrollDisable').css({top: -offsetY + "px"});
+                            $('.interview_video_2').addClass('on');
+                        });
+                        $('.btn_left').click(function(){
+                            $('body').removeClass('scrollDisable').css({top:""})
+                            $(window).scrollTop(offsetY);
+                            $('.interview_video_2').removeClass('on');
+                        });
+
+                    </script>
+                </section>
+
+                <section>
+                    <div class="key_line dark scroll_ani sclElm_last"  tabindex="0">
+                    <!-- 어두운 영상일 경우 dark class명 추가 -->
+                        <div class="text_info">
+                            <ul class="title only_pc">
+                                <li>
+                                    <span>A&nbsp;</span>
+                                    <span>NEW&nbsp;</span>
+                                    <span>DIMENTION&nbsp;</span>
+                                    <span>IN&nbsp;</span>
+                                </li>
+                                <li>
+                                    <span>HIGH</span>
+                                    <span>-END&nbsp;</span>
+                                    <span>SKINCARE</span>
+                                </li>
+                            </ul>
+                            <ul class="title only_mobile">
+                                <li>
+                                    <span>A&nbsp;</span>
+                                    <span>NEW&nbsp;</span>
+                                    <span>DIMENTION&nbsp;</span>
+                                </li>
+                                <li>
+                                    <span>IN&nbsp;</span>
+                                    <span>HIGH</span>
+                                    <span>-END&nbsp;</span>
+                                </li>
+                                <li>
+                                    <span>SKINCARE</span>
+                                </li>
+                            </ul>
+                            <div>
+                                <p>EPI-COSMETIC is the apex of skincare, offering exceptional results</p>
+                                <p>unattainable elsewhere, challenging the limits of your natural skin</p>
+                                <p>for a whole new level of beauty.</p>
+                            </div>
+                        </div>
+                        <!-- 23.02.06 playsinline-->
+                        <div class="video">
+                            <video src="../../resource/INT/images/discover/our_story_video_01.mp4" muted autoplay loop playsinline>대체텍스트입력</video>
+                            <div class="voddescription">영상에 대한 설명과 자막</div>
+                        </div>
+                    </div>
+
+                    <div class="skin_science scroll_ani_half" tabindex="0">
+                        <ul class="title">
+                            <li>
+                                <span>EPI</span>
+                                <span>-COSMETIC,</span>
+                            </li>
+                            <li>
+                                <span>NEW&nbsp;</span>
+                                <span>AREA&nbsp;</span>
+                                <span>Of&nbsp;</span>
+                                <span>Skin&nbsp;</span>
+                                <span>Science</span>
+                            </li>
+                        </ul>
+
+                        <div class="screen">
+                            <!-- 220106 수정 -->
+                            <div class="type_a">
+                                <div class="text_info">
+                                    <h4>NEW HEIGHTS OF <br>INNOVATION</h4>
+                                    <p>Innovation and a scientific approach to ingredients, formulations, and technologies. We’re elevating expectations for modern skincare, unlocking the secrets of what’s happening under our skin.</p>
+                                </div>
+                                <span class="img mix_luminosity">
+                                    <img src="https://amc.apglobal.com/image/384224417642/image_mutanjhjht6vr8qav3ig1a4p0i/-FJPG" class="only_pc" alt="NEW HEIGHTS OF INNOVATION">
+                                    <img src="https://amc.apglobal.com/image/384224417642/image_83d95l6rmd21nevsfghdc4cb1h/-FJPG" class="only_mobile" alt="NEW HEIGHTS OF INNOVATION">
+                                </span>
+                            </div>
+                            <div class="type_b">
+                                <span class="img">
+                                    <img src="https://amc.apglobal.com/image/384224417642/image_fmp0ho8rnl53f9daeq66291r0t/-FJPGG" class="only_pc" alt="CLINICALLY PROVEN RESULTS">
+                                    <img src="https://amc.apglobal.com/image/384224417642/image_fmp0ho8rnl53f9daeq66291r0t/-FJPG" class="only_mobile" alt="CLINICALLY PROVEN RESULTS">
+                                </span>
+                                <div class="text_info">
+                                    <h4>CLINICALLY PROVEN<br>RESULTS</h4>
+                                    <p>Through rigorous experimentation, we deliver performance-driven formulas with remarkable efficacies.</p>
+                                </div>
+                            </div>
+                            <div class="type_c">
+                                <div class="text_info">
+                                    <h4>THE FINEST<br>EXPERTISE</h4>
+                                    <p>Backed by over 70 years of deep research led by experts across various scientific disciplines, AP leads skincare innovation that pushes cross boundaries and exceeds expectations.</p>
+                                </div>
+                                <span class="img mix_luminosity">
+                                    <img src="https://amc.apglobal.com/image/384224417642/image_phc1cg7c9h5j729hpppggfbg3c/-FJPG" class="only_pc" alt="THE FINEST EXPERTISE">
+                                    <img src="https://amc.apglobal.com/image/384224417642/image_ad7q7b1d8l0ifc45d5438gli2l/-FJPG" class="only_mobile" alt="THE FINEST EXPERTISE">
+                                </span>
+                            </div>
+                            <!-- //220106 수정 -->
+                        </div>
+                    </div>
+
+                    <div class="collection scroll_ani_half" tabindex="0">
+                        <div class="layout_inner">
+                            <div class="bg_wrap">
+                                <img src="../../resource/INT/images/discover/our_story_banner_01.png" alt="our banner">
+                            </div>
+                            <h5>
+                                <span>DISCOVER YOUR PRIME SKIN<br></span>
+                                <span>PRESERVE IT FOREVER</span>
+                            </h5>
+                            <p>
+                                PRIME RESERVE Collection.<br>Our unique FLAVONOID 228K combines with<br> our innovative 3-step Retrinity system to rejuvenate<br> 
+                                your skin by reprogramming it effectively.*<br>
+                            </p>
+                            <p class="footnote txt_l"><span>*</span>Reprogramming: Anti-aging technology for younger, more beautiful skin.</p>
+                            <button>THE MORE</button>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- footer -->
+        <script src="../00.include/footer.js"></script>
+        <!-- // footer -->
+        <div class="dim"></div>
+        <script>
+            // scroll active
+			function optimizeAnimation(callback) {
+			let ticking = false;
+				return () => {
+					if (!ticking) {
+						ticking = true;
+						requestAnimationFrame(() => {
+							callback();
+							ticking = false;
+						});
+					}
+				};
+			}
+			
+			var flag = false;
+			var flag2 = false;
+			function scrollActive() {
+				var position = $(window).scrollTop();
+				$('.scroll_ani').each(function (e) {
+					var posY = $(this).offset().top - window.innerHeight / 3;
+					var posYb = $(this).offset().top + $(this).height();
+					if (position >= posY && posYb > position)  {
+						if(flag == false) {
+							$(this).addClass('active');
+							flag == true;
+						}
+						if($(this).hasClass('text_info')) {
+							$('.story_keyvisual2 .brand_intro').addClass('active');
+						}
+					}else {
+						$(this).removeClass('active');
+						flag == false;
+					}
+				})
+				$('.scroll_ani_half').each(function (e) {
+					var posY = $(this).offset().top - window.innerHeight / 2;
+					var posYb = $(this).offset().top + $(this).height();
+					// 220104 수정
+					if(position < window.innerHeight / 3) {
+						$(".skin_science").removeClass('active');
+					}
+					if($(this).hasClass('skin_science')) {
+						posY = $(this).offset().top - window.innerHeight;
+					}
+					if($(".collection").hasClass("active")){
+						$(".skin_science").removeClass('active');
+					}
+					// 220104 수정 END
+					if (position >= posY && posYb > position)  {
+						if(flag2 == false) {
+							$(this).addClass('active');
+							flag2 == true;
+						}
+					}else {
+						$(this).removeClass('active');
+						flag2 == false;
+					}
+				})
+				var brandposY = $('.brand_intro').offset().top;
+				if (position > 0) {
+					$('.brand_intro').addClass('active');
+				}else {
+					$('.brand_intro').removeClass('active');
+				}
+			}
+			
+			
+            if(window.innerWidth < 1281){
+                var headerH = 61;
+            } else {
+                var headerH = 82;
+            }
+			
+			// 스크롤 모션
+			var scrollAnchorFlag = false;
+			var scrollAnchorLast = false;
+			function scrollAnchor(target) {
+				$(target).each(function (index) {
+					$(this).on("mousewheel DOMMouseScroll", function (e) {
+						e.preventDefault();
+						e.stopPropagation();
+						var delta = 0;
+						if (!event) event = window.event;
+						if (event.wheelDelta) {
+							delta = event.wheelDelta / 120;
+							if (window.opera) delta = -delta;
+						}
+						else if (event.detail)
+							delta = -event.detail / 3;
+						var moveTop = $(window).scrollTop();
+						// 마우스휠을 위에서 아래로
+						if (delta < 0) {
+							var tt = 'down'
+							if (index + 1 < $(target).length) {
+								moveTop = $(target).eq(index + 1).offset().top - headerH;
+							} else {
+								moveTop = $('.sclElm_last').offset().top - headerH;
+								$('.story_keyvisual2 .brand_intro').addClass('end')
+							}
+							// 마우스휠을 아래에서 위로
+						} else {
+							var tt = 'up'
+							if (index - 1 > 0) {
+								moveTop = $(target).eq(index - 1).offset().top - headerH;
+								$('.story_keyvisual2 .brand_intro').removeClass('end')
+							} else {
+								moveTop = 0;
+							}
+						}
+
+						if (!$('body').hasClass('scrollDisable') && scrollAnchorFlag == false) {
+							scrollAnchorFlag = true;
+							// 화면 이동 0.1초(100)
+							$("html,body").stop().animate({
+								scrollTop: moveTop + 'px'
+							}, {
+								duration: 100, complete: function () {
+									scrollAnchorFlag = false;
+									//console.log(tt);
+								}
+							});
+						}
+					},{ passive: true });
+				});
+
+				$('.sclElm_last').on("mousewheel DOMMouseScroll", function (e) {
+					var delta = 0;
+					if (!event) event = window.event;
+					if (event.wheelDelta) {
+						delta = event.wheelDelta / 120;
+						if (window.opera) delta = -delta;
+					} 
+					else if (event.detail)
+						delta = -event.detail / 3;
+					var moveTop = $(window).scrollTop();
+					// 마우스휠을 위에서 아래로
+					if (delta > 0 && check_animate3 == false) {
+						check_animate3 = true;
+						e.preventDefault();
+						e.stopPropagation();
+						// 화면 이동 0.8초(800)
+						$("html,body").stop().animate({
+							// 23.01.17 수정
+							scrollTop: $('.brand_intro .text_info').offset().top - headerH + 5
+						}, {
+							duration: 100, complete: function () {
+								check_animate3 = false;
+							}
+						});
+					}
+				},{ passive: true });
+
+			}
+
+        
+
+			scrollAnchor(".sclElm");
+            scrollActive();
+			window.addEventListener('scroll', optimizeAnimation(scrollActive), { passive: true })
+        </script>
+    </div>
+</body>
+</html>

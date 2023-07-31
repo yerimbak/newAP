@@ -1,0 +1,21 @@
+{
+    "git.confirmSync": false,
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "emmet.preferences": {
+        "css.valueSeparator":":",
+        "css.propertyEnd":""
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "auto-rename-tag.activationOnLanguage": ["html"],
+    "prettier.printWidth": 270,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.useTabs": true,
+    "workbench.startupEditor": "none",
+    "editor.wordWrap": "on",
+    "liveServer.settings.port": 5501
+}
